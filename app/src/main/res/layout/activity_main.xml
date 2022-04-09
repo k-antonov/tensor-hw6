@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/mike" />
+
+        <ImageView
+            android:id="@+id/is_online_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/upper_medium"
+            android:layout_marginEnd="@dimen/medium"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/medium"
+            android:maxHeight="@dimen/medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/online" />
+
+        <TextView
+            android:id="@+id/is_online_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:layout_marginEnd="@dimen/tiny"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintRight_toLeftOf="@id/is_online_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="В сети" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_large"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo"
+            tools:text="Эрмантраут Михаил Петрович" />
+
+        <TextView
+            android:id="@+id/experience_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="Работает" />
+
+        <TextView
+            android:id="@+id/experience_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small"
+            android:paddingEnd="@dimen/medium"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="5 лет 2 месяца" />
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_big"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/experience_text"
+            tools:text="Ведущий инженер-программист (3 категории, моб.)" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/position"
+            tools:text="Альбукерке" />
+
+        <TextView
+            android:id="@+id/date_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small"
+            android:paddingEnd="@dimen/text_medium"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/position"
+            tools:text="11.08.1944" />
+
+        <TextView
+            android:id="@+id/achievements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:paddingBottom="@dimen/small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_big"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location"
+            tools:text="Достижения" />
+
+        <ImageView
+            android:id="@+id/achievement_pic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            app:layout_constraintEnd_toStartOf="@+id/achievement_pic2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/achievements"
+            tools:src="@drawable/achieve1" />
+
+        <ImageView
+            android:id="@+id/achievement_pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            app:layout_constraintEnd_toStartOf="@+id/achievement_pic3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/achievement_pic1"
+            app:layout_constraintTop_toBottomOf="@id/achievements"
+            tools:src="@drawable/achieve2" />
+
+        <ImageView
+            android:id="@+id/achievement_pic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            app:layout_constraintEnd_toStartOf="@+id/achievement_pic4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/achievement_pic2"
+            app:layout_constraintTop_toBottomOf="@id/achievements"
+            tools:src="@drawable/achieve3" />
+
+        <ImageView
+            android:id="@+id/achievement_pic4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/achievement_pic3"
+            app:layout_constraintTop_toBottomOf="@id/achievements"
+            tools:src="@drawable/achieve4" />
+
+        <TextView
+            android:id="@+id/contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/text_big"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/achievement_pic1"
+            tools:text="Контакты" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contacts"
+            tools:text="8-800-555-35-35" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:paddingBottom="@dimen/medium"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            tools:text="mikey@gmail.com" />
+
+        <Button
+            android:id="@+id/phone_button"
+            android:layout_width="@dimen/round_button"
+            android:layout_height="@dimen/round_button"
+            android:layout_marginEnd="@dimen/upper_medium"
+            android:layout_marginBottom="@dimen/medium"
+            android:background="@drawable/call"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contacts" />
+
+        <Button
+            android:id="@+id/message_button"
+            android:layout_width="@dimen/round_button"
+            android:layout_height="@dimen/round_button"
+            android:layout_marginEnd="@dimen/upper_medium"
+            android:layout_marginBottom="@dimen/medium"
+            android:background="@drawable/message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/phone_button"
+            app:layout_constraintTop_toBottomOf="@id/contacts" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
