@@ -7,6 +7,6 @@
     <dimen name="upper_medium">20dp</dimen>
     <dimen name="text_medium">16sp</dimen>
     <dimen name="text_big">20sp</dimen>
-    <dimen name="text_large">26sp</dimen>
+    <dimen name="text_large">24sp</dimen>
     <dimen name="round_button">80dp</dimen>
 </resources>

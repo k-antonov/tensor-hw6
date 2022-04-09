@@ -44,7 +44,7 @@
             android:textSize="@dimen/text_medium"
             app:layout_constraintRight_toLeftOf="@id/is_online_icon"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="В сети" />
+            tools:text="@string/online" />
 
         <TextView
             android:id="@+id/name"
@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:paddingEnd="@dimen/medium"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textSize="@dimen/text_large"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -64,10 +65,10 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:text="@string/experience"
             android:textSize="@dimen/text_medium"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/name"
-            tools:text="Работает" />
+            app:layout_constraintTop_toBottomOf="@id/name" />
 
         <TextView
             android:id="@+id/experience_value"
@@ -118,14 +119,14 @@
             android:id="@+id/achievements"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/medium"
+            android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
             android:paddingBottom="@dimen/small"
+            android:text="@string/achievements"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textSize="@dimen/text_big"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/location"
-            tools:text="Достижения" />
+            app:layout_constraintTop_toBottomOf="@id/location" />
 
         <ImageView
             android:id="@+id/achievement_pic1"
@@ -133,11 +134,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:src="@drawable/achieve1"
             app:layout_constraintEnd_toStartOf="@+id/achievement_pic2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/achievements"
-            tools:src="@drawable/achieve1" />
+            app:layout_constraintTop_toBottomOf="@id/achievements" />
 
         <ImageView
             android:id="@+id/achievement_pic2"
@@ -145,11 +146,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:src="@drawable/achieve2"
             app:layout_constraintEnd_toStartOf="@+id/achievement_pic3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/achievement_pic1"
-            app:layout_constraintTop_toBottomOf="@id/achievements"
-            tools:src="@drawable/achieve2" />
+            app:layout_constraintTop_toBottomOf="@id/achievements" />
 
         <ImageView
             android:id="@+id/achievement_pic3"
@@ -157,11 +158,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:src="@drawable/achieve3"
             app:layout_constraintEnd_toStartOf="@+id/achievement_pic4"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/achievement_pic2"
-            app:layout_constraintTop_toBottomOf="@id/achievements"
-            tools:src="@drawable/achieve3" />
+            app:layout_constraintTop_toBottomOf="@id/achievements" />
 
         <ImageView
             android:id="@+id/achievement_pic4"
@@ -169,11 +170,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:src="@drawable/achieve4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/achievement_pic3"
-            app:layout_constraintTop_toBottomOf="@id/achievements"
-            tools:src="@drawable/achieve4" />
+            app:layout_constraintTop_toBottomOf="@id/achievements" />
 
         <TextView
             android:id="@+id/contacts"
@@ -181,11 +182,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/medium"
             android:paddingTop="@dimen/small"
+            android:text="@string/contacts"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textSize="@dimen/text_big"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/achievement_pic1"
-            tools:text="Контакты" />
+            app:layout_constraintTop_toBottomOf="@id/achievement_pic1" />
 
         <TextView
             android:id="@+id/phone"

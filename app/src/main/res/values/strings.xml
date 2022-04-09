@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TensorHW6</string>
+    <string name="experience">Работает</string>
+    <string name="achievements">Достижения</string>
+    <string name="contacts">Контакты</string>
+    <string name="online">В сети</string>
+    <string name="offline">Не в сети</string>
 </resources>
